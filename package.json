@@ -10,6 +10,7 @@
 		"test:ci": "vitest run",
 		"e2e": "cypress open",
 		"e2e:run": "cypress run",
+		"e2e:ci": "start-server-and-test dev http://localhost:3000 'npx cypress run'",
 		"lint": "next lint",
 		"lint:fix": "next lint --fix",
 		"format": "prettier --write .",
@@ -54,6 +55,7 @@
 		"jsdom": "^25.0.1",
 		"lint-staged": "^15.2.10",
 		"prettier": "^3.3.3",
+		"start-server-and-test": "^2.0.8",
 		"typescript": "^5",
 		"vite-tsconfig-paths": "^5.1.2",
 		"vitest": "^2.1.4"
