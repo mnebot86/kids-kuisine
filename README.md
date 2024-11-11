@@ -106,20 +106,19 @@ Run tests with:
     •	Use integration tests over unit tests for components with significant logic.
     •	Store reusable setup logic in __test__/setup.ts.ry.
 
-
 Run E2E tests with:
 
     npm run e2e:run
 
     	•	Prioritize High-Level User Flows: Focus on essential pages and flows like login, checkout, and navigation.
-	•	Use data-* Attributes for Stability: Use data-cy attributes to select elements, ensuring tests are resilient to CSS changes.
-	•	Favor Assertions Over Hard Waits: Use .should() assertions instead of hard-coded cy.wait() to reduce flakiness.
-	•	Leverage Custom Commands: Store repeated actions (like login) in cypress/support/commands.js for clean, reusable code.
-	•	Organize with describe and it: Group tests logically for clear structure and easy identification.
-	•	Stub Network Calls: Use cy.intercept() to mock API responses, improving test reliability and speed.
-	•	Store Setup in beforeEach Hooks: Reuse setup logic (e.g., authentication) across tests in beforeEach.
-	•	Capture Screenshots on Failure: Use cy.screenshot() for debugging failed test steps, especially on CI.
-	•	Keep Tests Independent: Clear cookies and local storage between tests to prevent side effects.
+    •	Use data-* Attributes for Stability: Use data-cy attributes to select elements, ensuring tests are resilient to CSS changes.
+    •	Favor Assertions Over Hard Waits: Use .should() assertions instead of hard-coded cy.wait() to reduce flakiness.
+    •	Leverage Custom Commands: Store repeated actions (like login) in cypress/support/commands.js for clean, reusable code.
+    •	Organize with describe and it: Group tests logically for clear structure and easy identification.
+    •	Stub Network Calls: Use cy.intercept() to mock API responses, improving test reliability and speed.
+    •	Store Setup in beforeEach Hooks: Reuse setup logic (e.g., authentication) across tests in beforeEach.
+    •	Capture Screenshots on Failure: Use cy.screenshot() for debugging failed test steps, especially on CI.
+    •	Keep Tests Independent: Clear cookies and local storage between tests to prevent side effects.
 
 Deployment
 
